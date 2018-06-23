@@ -9,3 +9,5 @@ services:
       - db
     ports:
       - "2300:2300"
+    volumes:
+      - .:/app/hanami_todo_sandbox
