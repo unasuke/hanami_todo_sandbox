@@ -5,3 +5,4 @@
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
 
 get '/users', to: 'users#index'
+get '/sessions/new', to: 'sessions#new'
