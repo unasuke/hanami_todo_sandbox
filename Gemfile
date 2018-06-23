@@ -4,6 +4,7 @@ gem 'rake'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 
+gem 'bcrypt'
 gem 'pg'
 
 group :development do
