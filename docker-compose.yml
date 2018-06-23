@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: postgres:9.6.9
+  app:
+    build: .
+    command: bundle exec hanami server
+    depends_on:
+      - db
+    ports:
+      - "2300:2300"
