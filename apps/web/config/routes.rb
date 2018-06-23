@@ -6,3 +6,4 @@
 
 get '/users', to: 'users#index'
 get '/sessions/new', to: 'sessions#new'
+post '/sessions', to: 'sessions#create'
