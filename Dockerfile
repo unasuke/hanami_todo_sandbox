@@ -1,6 +1,6 @@
 FROM ruby:2.5.1-stretch
 
-RUN apt update && apt install --assume-yes libpq-dev
+RUN apt update && apt install --assume-yes postgresql-client
 WORKDIR /app/hanami_todo_sandbox
 COPY Gemfile Gemfile.lock /app/hanami_todo_sandbox/
 RUN bundle install
